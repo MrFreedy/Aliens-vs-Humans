@@ -1,23 +1,0 @@
-
-8
-java:S3010	"#Remove this assignment of "skills".(²›¶9
-9
-java:S3010
-"#Remove this assignment of "weapon".(ÚÜ¡
-8
-java:S3010""Remove this assignment of "armor".(‹Ö…±
-J
-java:S2209	"5Change this instance-reference to a static reference.(²›¶9
-K
-java:S2209
-"5Change this instance-reference to a static reference.(ÚÜ¡
-K
-java:S2209"5Change this instance-reference to a static reference.(‹Ö…±
-Q
-java:S2696"6Make the enclosing method "static" or remove this set.(ş´Ùåüÿÿÿÿ
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(¥ÜËìüÿÿÿÿ8µŸÖÜÛ0
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(¾ìîŞüÿÿÿÿ8¶ŸÖÜÛ0
-E
-java:S1068"*Remove this unused "weapon" private field.(êÄûøÿÿÿÿ

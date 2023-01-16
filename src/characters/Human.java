@@ -4,7 +4,12 @@ public class Human extends Species{
     private static String skills;
     private static String weapon;
     private static int armor;
-    public Human(String name, int health, int attack, String skills, String weapon,int armor){
+
+    public static String getWeapon() {
+        return weapon;
+    }
+
+    public Human(String name, int health, int attack, String skills, String weapon, int armor){
         super(name, health, attack);
         this.skills = skills;
         this.weapon = weapon;
@@ -19,6 +24,21 @@ public class Human extends Species{
     }
     public void setArmor(int amount){
         armor+=amount;
+    }
+
+    public void equipWeapon(String weapon){
+        this.weapon=weapon;
+    }
+
+    @Override
+    public void attack(Species opponent){
+        if(weapon.equals("AR-15")){
+            attack=20;
+            super.attack(opponent);
+        }else{
+            attack=5;
+            super.attack(opponent);
+        }
     }
 
     @Override
@@ -44,13 +64,18 @@ public class Human extends Species{
 
     @Override
     public void heal(int amount){
-        if(health+amount>100){
-            health = 100;
-        }else {
-            super.heal(amount);
-            speak("I heal myself !");
+        if(health!=100){
+            if(health+amount>100){
+                health = 100;
+            }else {
+                super.heal(amount);
+                speak("I heal myself !");
+            }
+        }else{
+            speak("I feel good ! I don't need to heal me");
         }
     }
+
 
     public void eat(){
         if(attack<10){

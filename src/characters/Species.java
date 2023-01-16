@@ -26,11 +26,15 @@ public class Species {
     }
 
     public void speak(String message){
-        System.out.printf("%s: %s",getName(),message);
+        System.out.printf("%s: %s\n",getName(),message);
     }
 
     public void attack(Species opponent){
-        opponent.health -= attack;
+        if(opponent.getClass().equals(Human.class)){
+            opponent.takeDamage(attack);
+        }else{
+            opponent.takeDamage(attack);
+        }
     }
 
     public void takeDamage(int amount){
