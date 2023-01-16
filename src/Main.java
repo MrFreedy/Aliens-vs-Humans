@@ -1,8 +1,9 @@
 import characters.*;
 public class Main {
     public static void main(String[] args){
-        Alien alien = new Alien("Brojz",250, 7,"Phylogus","invisibility");
-        Human sam = new Human("Sam",100,5,"Strong", "AR-15",100);
+        Alien alien = new Alien("Brojz",100, 7,"Phylogus","invisibility");
+        Human sam = new Human("Sam",100,5, "AR-15",100);
+
 
     }
 }

@@ -1,29 +1,21 @@
 package characters;
 
 public class Human extends Species{
-    private static String skills;
-    private static String weapon;
-    private static int armor;
+    public static String weapon;
+    public static int armor;
 
     public static String getWeapon() {
         return weapon;
     }
 
-    public Human(String name, int health, int attack, String skills, String weapon, int armor){
+    public Human(String name, int health, int attack, String weapon, int armor){
         super(name, health, attack);
-        this.skills = skills;
         this.weapon = weapon;
         this.armor = armor;
     }
 
-    public String getSkills(){
-        return skills;
-    }
     public int getArmor(){
         return armor;
-    }
-    public void setArmor(int amount){
-        armor+=amount;
     }
 
     public void equipWeapon(String weapon){

@@ -11,8 +11,11 @@ public class Alien extends Species{
 
     @Override
     public void heal(int amount){
-        if(health+amount>250){
+        if(health+amount>250 && health !=250){
             health=250;
+            speak("I use my genetic to heal myself !");
+        }else if (health==250){
+            speak("I feel good ! I don't need to heal me");
         }else{
             super.heal(amount);
             speak("I use my genetic to heal myself !");

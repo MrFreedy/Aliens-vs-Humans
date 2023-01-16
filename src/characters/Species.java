@@ -30,11 +30,7 @@ public class Species {
     }
 
     public void attack(Species opponent){
-        if(opponent.getClass().equals(Human.class)){
-            opponent.takeDamage(attack);
-        }else{
-            opponent.takeDamage(attack);
-        }
+        opponent.takeDamage(attack);
     }
 
     public void takeDamage(int amount){
